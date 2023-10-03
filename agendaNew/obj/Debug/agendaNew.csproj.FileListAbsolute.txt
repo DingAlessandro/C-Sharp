@@ -1,0 +1,7 @@
+E:\Alessandro Ding 4F\agendaNew\bin\Debug\agendaNew.exe.config
+E:\Alessandro Ding 4F\agendaNew\bin\Debug\agendaNew.exe
+E:\Alessandro Ding 4F\agendaNew\bin\Debug\agendaNew.pdb
+E:\Alessandro Ding 4F\agendaNew\obj\Debug\agendaNew.csproj.AssemblyReference.cache
+E:\Alessandro Ding 4F\agendaNew\obj\Debug\agendaNew.csproj.CoreCompileInputs.cache
+E:\Alessandro Ding 4F\agendaNew\obj\Debug\agendaNew.exe
+E:\Alessandro Ding 4F\agendaNew\obj\Debug\agendaNew.pdb
