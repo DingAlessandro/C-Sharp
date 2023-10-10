@@ -1,4 +1,4 @@
-﻿using Microsoft.SqlServer.Server;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -106,9 +106,8 @@ namespace agendaNew
             Console.Clear();
             Console.WriteLine("inserisci la cittadinanza");
             cittadino[indice].cittadinanza = Console.ReadLine();
-            cittadino[indice].eta = calcoloEta(cittadino[indice]);
             cittadino[indice].codiceFiscale = CalcolaCF(cittadino[indice], "H620");
-            Console.WriteLine($"Codice fiscale :{ cittadino[indice].codiceFiscale}");
+            Console.WriteLine($"Codice fiscale :{cittadino[indice].codiceFiscale}");
             Console.ReadKey(true);
         }
         static string CalcolaCF(Anagrafica persona, string codiceCatastale)
@@ -225,7 +224,7 @@ namespace agendaNew
             Console.WriteLine("inserisci il codice fiscale della persona su cui vuoi effetuare la modifica");
             do
             {
-                if(cd != "") 
+                if (cd != "")
                 {
                     Console.WriteLine("codice errato o non trovato riprova");
                 }
@@ -267,15 +266,15 @@ namespace agendaNew
             Console.WriteLine($"Codice fiscale :{persona[posizione].codiceFiscale}");
             Console.ReadKey(true);
         }
-        static int calcoloEta(Anagrafica persona)
+        static int calcoloEta(DateTime persona)
         {
             DateTime adesso = DateTime.Now;
-            int eta = adesso.Year - persona.dataNascita.Year;
-            if(adesso.Month <= persona.dataNascita.Month) 
+            int eta = adesso.Year - persona.Year - 1;
+            if (adesso.Month >= persona.Month)
             {
-                if (adesso.Month == persona.dataNascita.Month)
+                if (adesso.Month == persona.Month)
                 {
-                    if (adesso.Day > persona.dataNascita.Day)
+                    if (adesso.Day > persona.Day)
                     {
                         eta++;
                     }
@@ -296,7 +295,7 @@ namespace agendaNew
             Anagrafica[] cittadino = new Anagrafica[nPersona];
             const string titolo = "Agenda Anagrafe";
             int indice = 0;
-            string[] opzioniMenu = new string[] { "Inserimento", "Visualizzaizone", "Modifica","Eta", "EXIT" };
+            string[] opzioniMenu = new string[] { "Inserimento", "Visualizzaizone", "Modifica", "Eta", "EXIT" };
             int scelta;
             do
             {
@@ -339,11 +338,41 @@ namespace agendaNew
                         }
                         break;
                     case 4:
-                        Console.WriteLine(opzioniMenu[3]);
-                        
+                        if (indice != 0)
+                        {
+                            Console.WriteLine(opzioniMenu[3]); string cd = "";
+                            int posizione = 0;
+                            bool trovato = true;
+                            for (int i = 0; i < indice; i++)
+                            {
+                                Console.WriteLine(cittadino[i].ToString());
+                            }
+                            Console.WriteLine("inserisci il codice fiscale della persona che cerchi l'età");
+                            do
+                            {
+                                if (cd != "")
+                                {
+                                    Console.WriteLine("codice errato o non trovato riprova");
+                                }
+                                cd = Console.ReadLine();
+                                for (int i = 0; i < indice && trovato; i++)
+                                {
+                                    if (cd == cittadino[i].codiceFiscale)
+                                    {
+                                        trovato = false;
+                                        posizione = i;
+                                    }
+                                }
+                            } while (trovato);
+                            Console.WriteLine($"L'età della persona di {cittadino[posizione].nome} {cittadino[posizione].cognome} è {calcoloEta(cittadino[posizione].dataNascita)}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("non è stato ancora effetuato l'inserimento");
+                        }
                         break;
                     case 5:
-                        Console.WriteLine(opzioniMenu[3]);
+                        Console.WriteLine(opzioniMenu[4]);
                         break;
                 }
                 Console.WriteLine("premi un tasto qualsiasi per procedere");
