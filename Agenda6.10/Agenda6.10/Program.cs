@@ -29,10 +29,9 @@ namespace agendaNew
             public StatoCivile statocivile;
             public string cittadinanza;
             public string codiceFiscale;//QIUXNG05T26Z210S
-            public int eta;
             public override string ToString()
             {
-                return string.Format($"{nome}\n{cognome}\n{dataNascita.ToShortDateString()}\n{sesso.ToString()}\n{statocivile.ToString()}\n{cittadinanza}\n {eta}\n{codiceFiscale}");
+                return string.Format($"{nome}\n{cognome}\n{dataNascita.ToShortDateString()}\n{sesso.ToString()}\n{statocivile.ToString()}\n{cittadinanza}\n{codiceFiscale}");
             }
         }
         static void Set(ref int x, ref int y)
@@ -108,7 +107,6 @@ namespace agendaNew
             Console.WriteLine("inserisci la cittadinanza");
             cittadino[indice].cittadinanza = Console.ReadLine();
             cittadino[indice].eta = calcoloEta(cittadino[indice]);
-            Console.WriteLine(cittadino[indice].eta);
             cittadino[indice].codiceFiscale = CalcolaCF(cittadino[indice], "H620");
             Console.WriteLine($"Codice fiscale :{ cittadino[indice].codiceFiscale}");
             Console.ReadKey(true);
@@ -298,7 +296,7 @@ namespace agendaNew
             Anagrafica[] cittadino = new Anagrafica[nPersona];
             const string titolo = "Agenda Anagrafe";
             int indice = 0;
-            string[] opzioniMenu = new string[] { "Inserimento", "Visualizzaizone", "Modifica", "EXIT" };
+            string[] opzioniMenu = new string[] { "Inserimento", "Visualizzaizone", "Modifica","Eta", "EXIT" };
             int scelta;
             do
             {
@@ -341,6 +339,10 @@ namespace agendaNew
                         }
                         break;
                     case 4:
+                        Console.WriteLine(opzioniMenu[3]);
+                        
+                        break;
+                    case 5:
                         Console.WriteLine(opzioniMenu[3]);
                         break;
                 }
