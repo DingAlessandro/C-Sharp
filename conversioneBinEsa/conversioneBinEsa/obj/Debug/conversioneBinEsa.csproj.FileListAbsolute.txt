@@ -1,8 +1,0 @@
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\bin\Debug\conversioneBinEsa.exe.config
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\bin\Debug\conversioneBinEsa.exe
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\bin\Debug\conversioneBinEsa.pdb
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\obj\Debug\conversioneBinEsa.csproj.AssemblyReference.cache
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\obj\Debug\conversioneBinEsa.csproj.SuggestedBindingRedirects.cache
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\obj\Debug\conversioneBinEsa.csproj.CoreCompileInputs.cache
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\obj\Debug\conversioneBinEsa.exe
-C:\Users\Ye\Downloads\计算机作业\conversioneBinEsa\conversioneBinEsa\obj\Debug\conversioneBinEsa.pdb
