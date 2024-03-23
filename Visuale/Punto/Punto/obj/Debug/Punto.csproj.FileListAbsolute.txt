@@ -1,0 +1,14 @@
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\bin\Debug\Punto.exe.config
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\bin\Debug\Punto.exe
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\bin\Debug\Punto.pdb
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\obj\Debug\Punto.csproj.AssemblyReference.cache
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\obj\Debug\Punto.csproj.CoreCompileInputs.cache
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\obj\Debug\Punto.exe
+C:\Users\dingy\OneDrive\Desktop\计算机作业\Punto\Punto\obj\Debug\Punto.pdb
+E:\4F\Punto\Punto\bin\Debug\Punto.exe.config
+E:\4F\Punto\Punto\bin\Debug\Punto.exe
+E:\4F\Punto\Punto\bin\Debug\Punto.pdb
+E:\4F\Punto\Punto\obj\Debug\Punto.csproj.AssemblyReference.cache
+E:\4F\Punto\Punto\obj\Debug\Punto.csproj.CoreCompileInputs.cache
+E:\4F\Punto\Punto\obj\Debug\Punto.exe
+E:\4F\Punto\Punto\obj\Debug\Punto.pdb
